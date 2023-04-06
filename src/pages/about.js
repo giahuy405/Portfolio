@@ -4,6 +4,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import developer from '../../public/images/profile/develop3.jpg'
+import Link from 'next/link'
+import { LinkArrow } from '@/components/Icons'
+import Skill from '@/components/Skill'
+import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 const about = () => {
     return (
         <>
@@ -11,24 +16,39 @@ const about = () => {
                 <title>Phạm Gia Huy | About Page</title>
                 <meta name='description' content='any description' />
             </Head>
-            <main className=''>
+            <main className='flex w-ful flex-col items-center justify-center'>
                 <Layout className='pt-16'>
                     <AnimatedText text='I just find myself happy with the simple things.' className='!text-6xl' />
-                    <div className='grid grid-cols-2 gap-20 mt-5 max-w-[800px] mx-auto'>
+                    <div className='grid grid-cols-2 py-20 items-center'>
                         <div className='col-span-1'>
-                            <h2 className='text-2xl'>Biography</h2>
-                            <p>
-                                I like to read manga/manhua/manhwa when i have sparetime. And, i like to study tutorials of senior developer on youtube.  I like to read manga/manhua/manhwa when i have sparetime. And, i like to study tutorials of senior developer on youtube.  I like to read manga/manhua/manhwa when i have sparetime. And, i like to study tutorials of senior developer on youtube.  I like to read manga/manhua/manhwa when i have sparetime. And, i like to study tutorials of senior developer on youtube.  I like to read manga/manhua/manhwa when i have sparetime. And, i like to study tutorials of senior developer on youtube.
-                            </p>
+                            <h3 className='text-dark/75 text-xl font-semibold '>Biography</h3>
+                            <div className='text-md pt-4'>
+                                <p>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my <a target="_blank" className='underline font-semibold' href='https://github.com/giahuy405'>Github commit status<LinkArrow className='!w-3 ml-2 inline-block' /></a> </p>
+                                <p className='my-4'>
+                                    Website built from 2022 onwards. I believe that it needs even better UI/UX. Will make it more worth the money that the customer spends. So that is the reason why CSS take ~50% in my github status.
+                                </p>
+                                <p className='flex mb-4'>
+                                    <>I also read some book about UI/UX like this &nbsp;</>
+                                    <a
+                                        className='flex items-center underline font-semibold'
+                                        // download={true}
+                                        href='/50_ui_tips.pdf' target='_blank' > UI/UX tips PDF
+                                        <LinkArrow className='!w-3 ml-2 inline-block' />
+                                    </a>
+                                </p>
+                                <p>And I like to watch YouTube tutorials on Sundays. That's the place i learned a lot. Learn how to draw, solve rubik, swim, play games technique, pronunciation English, programming skills...</p>
+                            </div>
                         </div>
-                        {/* <div className='col-span-1 relative h-max rounded-2xl border-2 border-dark  bg-light p-8'>
-                            <div className='absolute top-0 -right-3  w-[102%] h-[103%] bg-dark rounded-2xl' />
-                            <Image src={developer} alt='profile' className='rounded-2xl h-auto w-full ' />
-                        </div>   */}
-                        <div className='col-span-1'>
-                            
+                        <div className='col-span-1 '>
+                            <div className='relative p-10 border border-dark rounded-2xl bg-light max-w-[300px] mx-auto'>
+                                <div className='absolute top-0 -right-3 w-[102%] h-[103%] -z-10 bg-dark rounded-[2rem] rounded-br-3xl ' />
+                                <Image src={developer} alt='123' className='rounded-2xl' />
+                            </div>
                         </div>
                     </div>
+                    <Skill />
+                    <Experience />
+                    <Education/>
                 </Layout>
             </main>
         </>

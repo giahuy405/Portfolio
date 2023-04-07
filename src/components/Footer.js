@@ -3,7 +3,7 @@ import Layout from './Layout'
 
 const Footer = () => {
     return (
-        <footer className='w-full border-solid border-dark border-t-2'>
+        <footer className='w-full border-solid border-dark border-t-2 dark:border-light'>
             <Layout className='py-8 flex items-center justify-between'>
                 <p>
                     {new Date().getFullYear()} &copy; All Rights Reserved.

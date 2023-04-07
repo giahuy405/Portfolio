@@ -26,7 +26,7 @@ const NavBar = () => {
                 <CustomLink href='/' title='Home' />
                 <CustomLink href='/about' title='About' className='mx-8' />
                 <CustomLink href='/projects' title='Project' className='mr-8' />
-                <CustomLink href='/article' title='Articles' />
+                <button className='cursor-not-allowed'>Articles</button>
             </nav>
             <nav className='flex items-center gap-4'>
                 <motion.a href='https://github.com/giahuy405' target={"_blank"}

@@ -14,7 +14,9 @@ import toDoList from '../../public/images/projects/to-do-list.png'
 import photoEditor from '../../public/images/projects/photo-editor.png'
 import xucXac from '../../public/images/projects/xuc-xac.png'
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
-    return <article className=' bg-light flex items-center justify-between rounded-3xl border-2 border-dark gap-5 p-10 '>
+    return <article className=' bg-light flex items-center justify-between rounded-3xl border-2 border-dark gap-5 p-10 dark:bg-dark
+    dark:border-light
+    '>
         <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-l-3xl rounded-r-xl '>
             <Image src={img} alt='title' className='w-full hover:scale-105 duration-300' />
         </Link>
@@ -25,15 +27,16 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
             </Link>
             <p className='mb-3'>{summary}</p>
             <div className='flex'>
-                <Link href={github} target='_blank'><GithubIcon className='w-[40px]' /></Link>
-                <Link href={link} target='_blank' className='bg-dark text-light ml-5 text-lg font-semibold rounded-lg py-2.5 px-6'>Visit Website</Link>
+                <Link href={github} target='_blank'><GithubIcon className='!w-[40px]' /></Link>
+                <Link href={link} target='_blank' className='bg-dark text-light ml-5 text-lg font-semibold rounded-lg py-2.5 px-6 dark:bg-white dark:text-dark'>Visit Website</Link>
             </div>
         </div>
-        <div className='absolute top-0 -right-[10px] w-[100%] h-[103%] -z-10 bg-dark rounded-[2rem] rounded-br-3xl' />
+        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem] ' />
     </article>
 }
 const TemplateProject = ({ type, title, summary, img, link, github }) => {
-    return <article className=' bg-light  rounded-3xl border-2 border-dark gap-5 p-6 '>
+    return <article className=' bg-light  rounded-3xl border-2 border-dark gap-5 p-6  dark:bg-dark
+    dark:border-light'>
         <div className='cursor-pointer overflow-hidden rounded-2xl w-full'>
             <Link href={link} target='_blank' className=''>
                 <Image src={img} alt='title' className='w-full object-cover max-h-[230px]  hover:scale-105 duration-300  ' />
@@ -46,13 +49,13 @@ const TemplateProject = ({ type, title, summary, img, link, github }) => {
             </Link>
             <p className='mb-3'>{summary}</p>
             <div className='flex'>
-                <Link href={github} target='_blank'><GithubIcon className='w-[40px]' /></Link>
+                <Link href={github} target='_blank'><GithubIcon className='!w-[40px]' /></Link>
                 <Link href={link} target='_blank' className='bg-light text-dark ml-5 text-lg   rounded-lg py-2.5 px-6
                  border border-dark  hover
                 '>Visit Website</Link>
             </div>
         </div>
-        <div className='absolute top-0 -right-[10px] w-[100%] h-[103%] -z-10 bg-dark rounded-[2rem] rounded-br-3xl' />
+        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-[10px] md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]  ' />
     </article>
 }
 const projects = () => {
@@ -143,7 +146,7 @@ const projects = () => {
                         </div>
                         <div className='col-span-1 relative'>
                             <TemplateProject
-                                title='Tabula'
+                                title='Dice Game'
                                 summary='A game built with React, Redux'
                                 link='https://dice-game-eight-mu.vercel.app'
                                 type='Featured Project'

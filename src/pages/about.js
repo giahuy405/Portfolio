@@ -22,7 +22,7 @@ const about = () => {
                         <div className='col-span-1'>
                             <h3 className='text-dark/75 text-xl font-semibold dark:text-white'>Biography</h3>
                             <div className='text-md pt-4'>
-                                <>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my
+                                <>Hi, I am  <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my
                                     <a target={`_blank`} className='underline font-semibold' href='https://github.com/giahuy405'>
                                         Github commit status
                                     </a>

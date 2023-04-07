@@ -22,20 +22,23 @@ const about = () => {
                         <div className='col-span-1'>
                             <h3 className='text-dark/75 text-xl font-semibold dark:text-white'>Biography</h3>
                             <div className='text-md pt-4'>
-                                <p>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my <a target={`_blank`} className='underline font-semibold' href='https://github.com/giahuy405'>Github commit status<LinkArrow className='!w-3 ml-2 inline-block' /></a> </p>
+                                <>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my
+                                    <a target={`_blank`} className='underline font-semibold' href='https://github.com/giahuy405'>
+                                        Github commit status
+                                    </a>
+                                </>
                                 <p className='my-4'>
                                     Website built from 2022 onwards. I believe that it needs even better UI/UX. Will make it more worth the money that the customer spends. So that is the reason why CSS take ~50% in my github status.
                                 </p>
                                 <p className='flex mb-4'>
-                                    <>I also read some book about UI/UX like this &nbsp;</>
+                                    <>I also read some book about UI/UX like this </>
                                     <a
                                         className='flex items-center underline font-semibold'
                                         // download={true}
                                         href='/50_ui_tips.pdf' target={`_blank`} > UI/UX tips PDF
-                                        <LinkArrow className='!w-3 ml-2 inline-block' />
                                     </a>
                                 </p>
-                                <p>And I like to watch YouTube tutorials on Sundays. That's the place i learned a lot. Learn how to draw, solve rubik, swim, play games technique, pronunciation English, programming skills...</p>
+                                <p>And I like to watch YouTube tutorials on Sundays. That is the place i learned a lot. Learn how to draw, solve rubik, swim, play games technique, pronunciation English, programming skills...</p>
                             </div>
                         </div>
                         <div className='col-span-1 '>
@@ -47,7 +50,7 @@ const about = () => {
                     </div>
                     <Skill />
                     <Experience />
-                    <Education/>
+                    <Education />
                 </Layout>
             </main>
         </>

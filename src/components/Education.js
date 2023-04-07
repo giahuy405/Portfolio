@@ -30,7 +30,7 @@ const Education = () => {
     return (
         <div>
             <h2 className='font-bold text-6xl text-center mb-15 mt-24'>Education</h2>
-            <div ref={ref} className='w-[75%] mx-auto relative '>
+            <div ref={ref} className='w-[55%] mx-auto relative '>
                 {/* Line */}
                 <motion.div
                     style={{ scaleY: scrollYProgress }}

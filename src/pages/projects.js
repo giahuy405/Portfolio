@@ -31,7 +31,7 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
                 <Link href={link} target='_blank' className='bg-dark text-light ml-5 text-lg font-semibold rounded-lg py-2.5 px-6 dark:bg-white dark:text-dark'>Visit Website</Link>
             </div>
         </div>
-        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem] ' />
+        <div className='absolute top-0 -right-3.5 -z-10 h-[103%] w-[101%] rounded-[3rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem] ' />
     </article>
 }
 const TemplateProject = ({ type, title, summary, img, link, github }) => {
@@ -55,7 +55,7 @@ const TemplateProject = ({ type, title, summary, img, link, github }) => {
                 '>Visit Website</Link>
             </div>
         </div>
-        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-[10px] md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]  ' />
+        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[103%] rounded-[3rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-[14px] md:w-[102%] xs:h-[102%] xs:rounded-[2rem]  ' />
     </article>
 }
 const projects = () => {
@@ -128,7 +128,7 @@ const projects = () => {
                                 title='Tabula'
                                 summary='Using SCSS'
                                 link='https://tabula-tan.vercel.app'
-                                type='Featured Project'
+                                type='Template Website'
                                 img={tabula}
                                 github='https://github.com/giahuy405/Tabula'
                             />

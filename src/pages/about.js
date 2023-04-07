@@ -49,7 +49,7 @@ const about = () => {
                         </div>
                     </div>
                     <Skill />
-                    <Experience />
+                    {/* <Experience /> */}
                     <Education />
                 </Layout>
             </main>

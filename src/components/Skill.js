@@ -34,7 +34,7 @@ const Skill = () => {
                 <SkillText name='StyleComponent' x='-5vw' y='18vw' />
                 <SkillText name='EXPRESS.JS' x='24vw' y='0vw' />
                 <SkillText name='NEST.JS' x='-33vw' y='-10vw' />
-                <SkillText name='ORM' x='0vw' y='-18vw' />
+                <SkillText name='ORM' x='0vw' y='-16vw' />
                 <SkillText name='GRAPHQL/SOCKET.IO' x='5vw' y='10vw' />
             </div>
         </>

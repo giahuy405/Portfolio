@@ -11,7 +11,7 @@ const Footer = () => {
                 <p>
                     Make with <span className='text-pink-600'>&#9825;</span> by me</p>
                 <p>
-                    dsa dsa fads ds fds
+                    Very happy if i can work with your team
                 </p>
             </Layout>
         </footer>

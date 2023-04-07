@@ -17,11 +17,11 @@ const about = () => {
                 <meta name='description' content='any description' />
             </Head>
             <main className='flex w-ful flex-col items-center justify-center'>
-                <Layout className='pt-16'>
+                <Layout className='pt-14'>
                     <AnimatedText text='I just find myself happy with the simple things.' className='!text-6xl' />
                     <div className='grid grid-cols-2 py-20 items-center'>
                         <div className='col-span-1'>
-                            <h3 className='text-dark/75 text-xl font-semibold '>Biography</h3>
+                            <h3 className='text-dark/75 text-xl font-semibold dark:text-white'>Biography</h3>
                             <div className='text-md pt-4'>
                                 <p>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my <a target="_blank" className='underline font-semibold' href='https://github.com/giahuy405'>Github commit status<LinkArrow className='!w-3 ml-2 inline-block' /></a> </p>
                                 <p className='my-4'>
@@ -40,8 +40,8 @@ const about = () => {
                             </div>
                         </div>
                         <div className='col-span-1 '>
-                            <div className='relative p-10 border border-dark rounded-2xl bg-light max-w-[300px] mx-auto'>
-                                <div className='absolute top-0 -right-3 w-[102%] h-[103%] -z-10 bg-dark rounded-[2rem] rounded-br-3xl ' />
+                            <div className='relative p-10 border-2 border-dark rounded-2xl bg-light max-w-[300px] mx-auto dark:bg-dark dark:border-light'>
+                                <div className='absolute top-0 -right-3 w-[102%] h-[103%] -z-10 bg-dark rounded-[2rem] rounded-br-3xl dark:bg-light' />
                                 <Image src={developer} alt='123' className='rounded-2xl' />
                             </div>
                         </div>

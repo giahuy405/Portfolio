@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import developer from '../../public/images/profile/develop3.jpg'
-import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import Skill from '@/components/Skill'
 import Experience from '@/components/Experience'
@@ -23,7 +22,7 @@ const about = () => {
                         <div className='col-span-1'>
                             <h3 className='text-dark/75 text-xl font-semibold dark:text-white'>Biography</h3>
                             <div className='text-md pt-4'>
-                                <p>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my <a target="_blank" className='underline font-semibold' href='https://github.com/giahuy405'>Github commit status<LinkArrow className='!w-3 ml-2 inline-block' /></a> </p>
+                                <p>Hi, I'm <span className='font-bold'>Huy</span>, a web developer with a passion for creating beautiful, functional. I am always study new things everyday as you can see it on my <a target={`_blank`} className='underline font-semibold' href='https://github.com/giahuy405'>Github commit status<LinkArrow className='!w-3 ml-2 inline-block' /></a> </p>
                                 <p className='my-4'>
                                     Website built from 2022 onwards. I believe that it needs even better UI/UX. Will make it more worth the money that the customer spends. So that is the reason why CSS take ~50% in my github status.
                                 </p>
@@ -32,7 +31,7 @@ const about = () => {
                                     <a
                                         className='flex items-center underline font-semibold'
                                         // download={true}
-                                        href='/50_ui_tips.pdf' target='_blank' > UI/UX tips PDF
+                                        href='/50_ui_tips.pdf' target={`_blank`} > UI/UX tips PDF
                                         <LinkArrow className='!w-3 ml-2 inline-block' />
                                     </a>
                                 </p>

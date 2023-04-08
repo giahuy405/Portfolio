@@ -13,16 +13,17 @@ import tabula from '../../public/images/projects/tabula.png'
 import toDoList from '../../public/images/projects/to-do-list.png'
 import photoEditor from '../../public/images/projects/photo-editor.png'
 import xucXac from '../../public/images/projects/xuc-xac.png'
+import TransitionEffect from '@/components/TransitionEffect'
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
     return <article className=' bg-light flex items-center justify-between rounded-3xl border-2 border-dark gap-5 p-10 dark:bg-dark
-    dark:border-light
+    dark:border-light md:flex-col md:p-3
     '>
-        <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-l-3xl rounded-r-xl '>
-            <Image src={img} alt='title' className='w-full hover:scale-105 duration-300' />
+        <Link href={link} target='_blank' className='w-1/2 md:w-full cursor-pointer overflow-hidden rounded-l-3xl rounded-r-xl '>
+            <Image priority src={img} alt='title' className='w-full hover:scale-105 duration-300' />
         </Link>
-        <div className='w-1/2'>
-            <span className='text-primary text-xl font-semibold'>{type}</span>
-            <Link href={link} target='_blank' className='text-3xl font-bold my-4'>
+        <div className='w-1/2 md:w-full'>
+            <span className='text-primary text-xl font-semibold  '>{type}</span>
+            <Link href={link} target='_blank' className='text-3xl font-bold my-4 md:text-lg'>
                 <h2>{title}</h2>
             </Link>
             <p className='mb-3'>{summary}</p>
@@ -35,11 +36,11 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
     </article>
 }
 const TemplateProject = ({ type, title, summary, img, link, github }) => {
-    return <article className=' bg-light  rounded-3xl border-2 border-dark gap-5 p-6  dark:bg-dark
+    return <article className=' bg-light  rounded-3xl border-2 border-dark gap-5 p-6  dark:bg-dark md:p-3
     dark:border-light'>
         <div className='cursor-pointer overflow-hidden rounded-2xl w-full'>
             <Link href={link} target='_blank' className=''>
-                <Image src={img} alt='title' className='w-full object-cover max-h-[230px]  hover:scale-105 duration-300  ' />
+                <Image priority src={img} alt='title' className='w-full object-cover max-h-[230px]  hover:scale-105 duration-300  ' />
             </Link>
         </div>
         <div className=''>
@@ -55,7 +56,7 @@ const TemplateProject = ({ type, title, summary, img, link, github }) => {
                 '>Visit Website</Link>
             </div>
         </div>
-        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[103%] rounded-[3rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-[14px] md:w-[102%] xs:h-[102%] xs:rounded-[2rem]  ' />
+        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[3rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-[14px] md:w-[102%] xs:h-[102%] xs:rounded-[2rem]  ' />
     </article>
 }
 const projects = () => {
@@ -64,10 +65,12 @@ const projects = () => {
             <Head>
                 <title>Phạm Gia Huy | Project Page</title>
                 <meta name='description' content='any description' />
+                <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Eo_circle_blue_letter-p.svg/480px-Eo_circle_blue_letter-p.svg.png" />
             </Head>
+            <TransitionEffect />
             <main className='mb-16 flex flex-col items-center justify-center'>
                 <Layout className='pt-14'>
-                    <AnimatedText text={`"It’s not a bug. It’s just an undocumented feature!”`} className='!text-6xl' />
+                    <AnimatedText text={`The best way to learn new things is build projects`} className='!text-6xl   lg:!text-5xl md:!text-4xl sm:!text-3xl ' />
                     <div className='text-center'>
                         <button className='underline mt-4  '><a href='https://www.youtube.com/watch?v=i1G7qKO2WcI&t=169s' target='_blank'>10 min demo all project </a></button>
                     </div>
@@ -82,7 +85,7 @@ const projects = () => {
                                 github='https://github.com/giahuy405/Movie-2'
                             />
                         </div>
-                        <div className='col-span-1 relative'>
+                        <div className='col-span-1 md:col-span-2 relative'>
                             <TemplateProject
                                 title='To Do List'
                                 summary='A to do list app. Built with style-component'
@@ -92,7 +95,7 @@ const projects = () => {
                                 github='https://github.com/giahuy405/ToDoList---styledComponent'
                             />
                         </div>
-                        <div className='col-span-1 relative'>
+                        <div className='col-span-1 md:col-span-2 md:col-span-2 relative'>
                             <TemplateProject
                                 title='Pooch care'
                                 summary='The responsive website 8 pages. Dark/light theme '
@@ -113,7 +116,7 @@ const projects = () => {
                                 github='https://github.com/giahuy405/Jira'
                             />
                         </div>
-                        <div className='col-span-1 relative'>
+                        <div className='col-span-1 md:col-span-2 relative'>
                             <TemplateProject
                                 title='Master Work'
                                 summary='The responsive website 3 pages(Home,Service,Landing-page)'
@@ -123,7 +126,7 @@ const projects = () => {
                                 github='https://github.com/giahuy405/MasterWork'
                             />
                         </div>
-                        <div className='col-span-1 relative'>
+                        <div className='col-span-1 md:col-span-2 relative'>
                             <TemplateProject
                                 title='Tabula'
                                 summary='Using SCSS'
@@ -134,7 +137,7 @@ const projects = () => {
                             />
                         </div>
                         {/* ROW 3 */}
-                        <div className='col-span-1 relative'>
+                        <div className='col-span-1 md:col-span-2 relative'>
                             <TemplateProject
                                 title='Photo Editor'
                                 summary='The website edit the photo from your URL img.'
@@ -144,7 +147,7 @@ const projects = () => {
                                 github='https://github.com/giahuy405/Photo-Editor'
                             />
                         </div>
-                        <div className='col-span-1 relative'>
+                        <div className='col-span-1 md:col-span-2 relative'>
                             <TemplateProject
                                 title='Dice Game'
                                 summary='A game built with React, Redux'
@@ -154,7 +157,7 @@ const projects = () => {
                                 github='https://github.com/giahuy405/Dice-game'
                             />
                         </div>
-                      
+
                     </div>
 
                 </Layout>

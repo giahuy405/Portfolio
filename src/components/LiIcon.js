@@ -6,20 +6,20 @@ const LiIcon = ({ reference }) => {
         target: reference,
         offset: ["center end", "center center"]
     });
- 
+
     return (
-        <figure className='absolute -left-[3px] stroke-dark'>
+        <figure className='absolute -left-[16px] md:-left-[1px] xs:-left-[3px] stroke-dark dark:stroke-light'>
             <svg
-            className='-rotate-90'
-            width={75} height={75} viewBox='0 0 100 100'>
-                <circle cx='75' cy='50' r='20' className='stroke-primary stroke-1 fill-none' />
+                className='-rotate-90 md:w-[50px] md:h-[50px] xs:w-[40px] xs:h-[40px]'
+                width={75} height={75} viewBox='0 0 100 100'>
+                <circle cx='75' cy='50' r='20' className=' stroke-primary dark:stroke-primaryDark stroke-1 fill-none' />
                 <motion.circle
-                    cx='75' cy='50' r='20' className=' stroke-[10px] fill-light'
+                    cx='75' cy='50' r='20' className=' stroke-[6px] fill-light dark:fill-dark'
                     style={{
                         pathLength: scrollYProgress
                     }}
                 />
-                <circle cx='75' cy='50' r='10' className='animate-pulse stroke-1 fill-primary' />
+                <circle cx='75' cy='50' r='10' className='animate-pulse stroke-1 fill-primary dark:fill-primaryDark' />
             </svg>
         </figure>
     )

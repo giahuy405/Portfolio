@@ -8,6 +8,11 @@ const nextConfig = {
       type: 'image/x-icon',
     },
   },
+  images: {
+    domains: ['cybersoft.edu.vn'],
+  },
 }
+
+console.log('Next.js config:', nextConfig)
 
 module.exports = nextConfig

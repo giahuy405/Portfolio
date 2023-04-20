@@ -119,7 +119,7 @@ const projects = () => {
                         <div className='col-span-1 md:col-span-2 relative'>
                             <TemplateProject
                                 title='Master Work'
-                                summary='The responsive website 3 pages(Home,Service,Landing-page)'
+                                summary='3 pages(Home,Service,Landing-page)'
                                 link='https://masterwork-ruddy.vercel.app'
                                 type='Template Website'
                                 img={masterwork}

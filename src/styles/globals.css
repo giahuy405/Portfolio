@@ -49,12 +49,16 @@
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
     max-width: 360px;
-    max-height: 340px;
+    max-height: 345px!important;
 }
 .myCard h3{
     display: none;
 }
-
+.myCard .myAvatar{
+    max-width: 360px;
+    max-height: 340px!important;;
+    object-fit: cover;
+}
 .myCard:hover {
     color: rgb(0, 0, 0);
     background-color: #55555531;

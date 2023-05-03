@@ -9,7 +9,7 @@ const quote = {
         opacity: 1,
         transition: {
             delay: 0.5,
-            staggerChildren:0.1, // delay single word
+            staggerChildren:0.2, // delay single word
         }
     }
 }

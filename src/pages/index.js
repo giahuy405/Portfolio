@@ -34,7 +34,7 @@ export default function Home() {
               </div>
               {/* <a href="https://mythrillfiction.com/" target="_blank">Mythrill</a> */}
             </div>
-            <div className="w-1/2 md:w-full flex flex-col items-center text-left">
+            <div className="w-1/2 md:w-full flex flex-col items-center text-left mt-5">
               <p className=" w-full text-sm relative pl-8 dark:text-light">
                 Hello
                 <span

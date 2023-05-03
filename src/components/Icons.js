@@ -447,7 +447,7 @@ export const LinkArrow = ({ className, ...rest }) => (
         width={24}
         height={24}
         viewBox="0 0 24 24"
-        className={`w-full h-auto ${className}`}
+        className={`${className}`}
         {...rest}
     >
         <path fill="none" d="M0 0h24v24H0z" />
@@ -462,6 +462,7 @@ export const LinkArrow = ({ className, ...rest }) => (
     </svg>
 );
 
+
 export const YoutubeIcon = ({ className, ...rest }) => {
     return (
         <svg
@@ -470,7 +471,7 @@ export const YoutubeIcon = ({ className, ...rest }) => {
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"
             viewBox="0 0 128 128"
-            className={`w-full h-auto ${className}`}
+            className={`${className}`}
             {...rest}
         >
             <circle cx={64} cy={64} r={64} fill="#e21a20" />
@@ -491,7 +492,7 @@ export const FacebookIcon = ({ className, ...rest }) => {
             xmlns="http://www.w3.org/2000/svg"
             data-name="Ebene 1"
             viewBox="0 0 1024 1024"
-            className={`w-full h-auto ${className}`}
+            className={`${className}`}
             {...rest}
         >
             <path

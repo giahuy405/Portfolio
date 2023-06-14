@@ -39,13 +39,13 @@ const Education = () => {
                 <ul className='w-full flex flex-col items-start mt-14 text-left pb-36 md:pb-40 md:ml-5'>
                     <Detail
                         type='Electronic Telecommunication'
-                        time='2020-2023 '
+                        time='2020-2023'
                         place='Cao Thang technical college'
                         info='Relevant courses included Computer Systems Engineering, Embedded programming and network.'
                     />
                     <Detail
                         type='Cybersoft Academy Degree'
-                        time='9/2022-8/2023'
+                        time='7/2022-7/2023'
                         place='Cybersoft Academy'
                         info='Learn React ecosystem for FE and NodeJS ecosystem for BE.'
                     />

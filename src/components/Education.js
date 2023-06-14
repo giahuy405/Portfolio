@@ -38,10 +38,10 @@ const Education = () => {
                 {/* Education */}
                 <ul className='w-full flex flex-col items-start mt-14 text-left pb-36 md:pb-40 md:ml-5'>
                     <Detail
-                        type='The Degree Of Associate IT'
+                        type='Electronic Telecommunication'
                         time='2020-2023 '
                         place='Cao Thang technical college'
-                        info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering.'
+                        info='Relevant courses included Computer Systems Engineering, Embedded programming and network.'
                     />
                     <Detail
                         type='Cybersoft Academy Degree'

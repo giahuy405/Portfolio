@@ -72,7 +72,7 @@ const projects = () => {
                 <Layout className='pt-14'>
                     <AnimatedText text={`The best way to learn new things is build projects`} className='!text-6xl   lg:!text-5xl md:!text-4xl sm:!text-3xl ' />
                     <div className='text-center'>
-                        <button className='underline mt-4  '><a href='https://www.youtube.com/watch?v=i1G7qKO2WcI&t=169s' target='_blank'>10 min demo all project </a></button>
+                        <button className='underline mt-4 text-3xl text-red-500'><a href='https://www.youtube.com/watch?v=pzTrI6V9LBM&list=PL79mICTSqo26IDhL4M106tdWynyapwoSi' target='_blank'>Video demo all project </a></button>
                     </div>
                     <div className='grid grid-cols-2 gap-24 mt-10'>
                         <div className='col-span-2 relative'>

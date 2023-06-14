@@ -52,9 +52,9 @@ const Skill = () => {
                 <SkillText2 x='-33vw' y='10vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/09/nodejs_v1.png' toolTip='NodeJS' />
                 <SkillText2 x='-33vw' y='-14vw' srcImg='https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/287/square_480/prismaHD.png' toolTip='Prisma' />
                 <SkillText2 x='-20vw' y='-5vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/09/mysql_v1.jpg' toolTip=' MYSQL' />
-                <SkillText2 x='-20vw' y='-12vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/09/docker_v1.png' toolTip='Docker' />
+                {/* <SkillText2 x='-20vw' y='-12vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/09/docker_v1.png' toolTip='Docker' /> */}
                 <SkillText2 x='5vw' y='10vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/10/nesjs.png' toolTip='NestJS' />
-                <SkillText2 x='-0vw' y='-15vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/10/graphQl.png' toolTip='GraphQL' />
+                {/* <SkillText2 x='-0vw' y='-15vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/10/graphQl.png' toolTip='GraphQL' /> */}
                 <SkillText2 x='0vw' y='-22vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/10/sequelize.png' toolTip='Sequelize' />
                 <SkillText2 x='-5vw' y='10vw' srcImg='https://cybersoft.edu.vn/wp-content/uploads/2022/10/express-1.png' toolTip='ExpressJS' />
                 <SkillText2 x='20vw' y='16vw' srcImg='https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png' toolTip='Styled-component' />

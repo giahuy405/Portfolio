@@ -57,7 +57,7 @@ export default function Home() {
                 <Link
                   className="flex items-center bg-dark text-light py-2.5 px-6 rounded-lg font-semibold hover:bg-light hover:text-dark duration-300 border border-dark dark:bg-light dark:border-light dark:text-dark"
                   // download={true}
-                  href="/dummy.pdf"
+                  href="/PhamGiaHuy_FrontEnd.pdf"
                   target="_blank"
                 >
                   Resume

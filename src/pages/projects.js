@@ -72,7 +72,9 @@ const projects = () => {
                 <Layout className='pt-14'>
                     <AnimatedText text={`The best way to learn new things is build projects`} className='!text-6xl   lg:!text-5xl md:!text-4xl sm:!text-3xl ' />
                     <div className='text-center'>
-                        <button className='underline mt-4 text-3xl text-red-500'><a href='https://www.youtube.com/watch?v=pzTrI6V9LBM&list=PL79mICTSqo26IDhL4M106tdWynyapwoSi' target='_blank'>Video demo all project </a></button>
+                        <button className='underline mt-4 text-3xl text-red-500'><a href='https://www.youtube.com/watch?v=pzTrI6V9LBM&list=PL79mICTSqo26IDhL4M106tdWynyapwoSi' target='_blank'>Video demo  </a></button>
+                        <br/>
+                        <button className='underline mt-4 text-3xl text-purple-500'><a href='https://zircon-chips-18c.notion.site/All-Projects-cbbdb4ea48c7405b91ca956b8c22a2d7?pvs=4' target='_blank'>Notion all projects</a></button>
                     </div>
                     <div className='grid grid-cols-2 gap-24 mt-10'>
                         <div className='col-span-2 relative'>
